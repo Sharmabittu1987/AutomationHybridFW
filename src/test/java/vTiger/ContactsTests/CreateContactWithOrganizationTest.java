@@ -28,7 +28,7 @@ public class CreateContactWithOrganizationTest extends BaseClass{
 		String LASTNAME = eUtil.getDataFromExcel("Contacts", 4, 2);
 		
 		
-		// Step 2 : Click on Organizations Link
+		// Step 2 : Click on Organizations Link.
 		
 		HomePage hp = new HomePage(driver);
 		hp.clickOnOrgLink();

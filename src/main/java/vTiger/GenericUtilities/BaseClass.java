@@ -36,14 +36,14 @@ public class BaseClass {
 	
 	public static WebDriver sdriver;
 	
-	@BeforeSuite
+	@BeforeSuite(groups = "RegressionSuite")
 	public void bsConfig()
 	{
 		System.out.println("====== DATABASE CONNECTION SUCCESSFUL =====");
 	}
 	
 	
-	@BeforeClass(alwaysRun = true)
+	@BeforeClass(alwaysRun = true)                         // USE alwaysrun = True ; in EVERY TEST METHOD
 	public void bcConfig()throws Throwable
 	{
 		// Read Browser Name & URL from Property File
@@ -88,7 +88,7 @@ public class BaseClass {
 		
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void bmConfig() throws Throwable
 	{
 		// Read User-Name & Password from Property File.

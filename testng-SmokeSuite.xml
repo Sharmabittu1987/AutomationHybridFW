@@ -3,10 +3,15 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      
+      <class name="vtigerPractice.AssertionsPractice"/>
+      <class name="vtigerPractice.RetryAnalyserPractice"/>
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry"/>
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest"/>
       <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest"/>
+      <class name="vtigerPractice.DataProviderPractice"/>
+      <class name="vtigerPractice.AssertionPracticeModified"/>
+      <class name="vtigerPractice.TestNGPractice"/>
+      <class name="vtigerPractice.ReadDataFromCmdLineTest"/>
       <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest"/>
     </classes>
   </test> <!-- Test -->

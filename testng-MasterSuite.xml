@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="MasterSuite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="vtigerPractice.AssertionsPractice"/>
+      <class name="vtigerPractice.RetryAnalyserPractice"/>
+      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry"/>
+      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest"/>
+      <class name="vtigerPractice.DataProviderPractice"/>
+      <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest"/>
+      <class name="vtigerPractice.AssertionPracticeModified"/>
+      <class name="vtigerPractice.TestNGPractice"/>
+      <class name="vtigerPractice.ReadDataFromCmdLineTest"/>
+      <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- MasterSuite -->

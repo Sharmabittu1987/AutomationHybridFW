@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vtigerPractice.AssertionPracticeModified">
+      <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest">
         <methods>
-          <include name="sampleTest2"/>
-          <include name="sampleTest"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="createOrganizationWithIndustryTest"/>
+          <include name="acConfig"/>
         </methods>
-      </class> <!-- vtigerPractice.AssertionPracticeModified -->
+      </class> <!-- vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

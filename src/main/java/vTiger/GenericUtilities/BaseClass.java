@@ -36,7 +36,7 @@ public class BaseClass {
 	
 	public static WebDriver sdriver;
 	
-	@BeforeSuite(groups = "RegressionSuite")
+	@BeforeSuite(groups = {"SmokeSuite","RegressionSuite"})
 	public void bsConfig()
 	{
 		System.out.println("====== DATABASE CONNECTION SUCCESSFUL =====");

@@ -1,379 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="20" passed="14" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-09T02:49:17 IST" name="Suite" finished-at="2023-08-09T02:53:38 IST" duration-ms="260425">
+  <suite started-at="2023-08-23T23:11:22 IST" name="Default suite" finished-at="2023-08-23T23:11:37 IST" duration-ms="14753">
     <groups>
     </groups>
-    <test started-at="2023-08-09T02:49:17 IST" name="Test" finished-at="2023-08-09T02:53:38 IST" duration-ms="260425">
+    <test started-at="2023-08-23T23:11:22 IST" name="Default test" finished-at="2023-08-23T23:11:37 IST" duration-ms="14753">
       <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@747ddf94]" started-at="2023-08-09T02:52:28 IST" name="bcConfig" finished-at="2023-08-09T02:52:32 IST" duration-ms="3598" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@747ddf94]" started-at="2023-08-09T02:52:32 IST" name="bmConfig" finished-at="2023-08-09T02:52:36 IST" duration-ms="4253" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createOrganizationWithIndustryTest()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@747ddf94]" started-at="2023-08-09T02:52:36 IST" name="createOrganizationWithIndustryTest" finished-at="2023-08-09T02:52:52 IST" duration-ms="15386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@747ddf94]" started-at="2023-08-09T02:52:52 IST" name="amConfig" finished-at="2023-08-09T02:52:55 IST" duration-ms="3878" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@747ddf94]" started-at="2023-08-09T02:52:55 IST" name="acConfig" finished-at="2023-08-09T02:52:56 IST" duration-ms="426" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest -->
-      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:49:17 IST" name="bsConfig" finished-at="2023-08-09T02:49:17 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:22 IST" name="bsConfig" finished-at="2023-08-23T23:11:22 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:50:35 IST" name="bcConfig" finished-at="2023-08-09T02:50:37 IST" duration-ms="2954" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:22 IST" name="bcConfig" finished-at="2023-08-23T23:11:25 IST" duration-ms="3245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:50:38 IST" name="bmConfig" finished-at="2023-08-09T02:50:42 IST" duration-ms="4190" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:25 IST" name="bmConfig" finished-at="2023-08-23T23:11:27 IST" duration-ms="1788" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="createMultipleOrganizationWithIndustryTest(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:50:42 IST" name="createMultipleOrganizationWithIndustryTest" data-provider="getData" finished-at="2023-08-09T02:50:58 IST" duration-ms="16010" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wipro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Banking]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="createOrganizationWithIndustryTest()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:27 IST" name="createOrganizationWithIndustryTest" finished-at="2023-08-23T23:11:35 IST" duration-ms="7433" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createMultipleOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:50:58 IST" name="amConfig" finished-at="2023-08-09T02:51:01 IST" duration-ms="3112" status="PASS">
+        </test-method> <!-- createOrganizationWithIndustryTest -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:35 IST" name="amConfig" finished-at="2023-08-23T23:11:37 IST" duration-ms="1984" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:01 IST" name="bmConfig" finished-at="2023-08-09T02:51:04 IST" duration-ms="3418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createMultipleOrganizationWithIndustryTest(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:04 IST" name="createMultipleOrganizationWithIndustryTest" data-provider="getData" finished-at="2023-08-09T02:51:19 IST" duration-ms="14703" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Lumen]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Biotechnology]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:19 IST" name="amConfig" finished-at="2023-08-09T02:51:22 IST" duration-ms="3125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:22 IST" name="bmConfig" finished-at="2023-08-09T02:51:26 IST" duration-ms="3490" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createMultipleOrganizationWithIndustryTest(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:26 IST" name="createMultipleOrganizationWithIndustryTest" data-provider="getData" finished-at="2023-08-09T02:51:40 IST" duration-ms="14639" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[KFC]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Food & Beverage]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:40 IST" name="amConfig" finished-at="2023-08-09T02:51:43 IST" duration-ms="3026" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:43 IST" name="bmConfig" finished-at="2023-08-09T02:51:47 IST" duration-ms="3507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createMultipleOrganizationWithIndustryTest(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:51:47 IST" name="createMultipleOrganizationWithIndustryTest" data-provider="getData" finished-at="2023-08-09T02:52:03 IST" duration-ms="16383" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dominos]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Energy]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:52:03 IST" name="amConfig" finished-at="2023-08-09T02:52:06 IST" duration-ms="3161" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:52:06 IST" name="bmConfig" finished-at="2023-08-09T02:52:10 IST" duration-ms="3622" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createMultipleOrganizationWithIndustryTest(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:52:10 IST" name="createMultipleOrganizationWithIndustryTest" data-provider="getData" finished-at="2023-08-09T02:52:25 IST" duration-ms="15073" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Infosys]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Media]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganizationWithIndustryTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:52:25 IST" name="amConfig" finished-at="2023-08-09T02:52:28 IST" duration-ms="2851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:52:28 IST" name="acConfig" finished-at="2023-08-09T02:52:28 IST" duration-ms="412" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:37 IST" name="acConfig" finished-at="2023-08-23T23:11:37 IST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest@2f9f7dcf]" started-at="2023-08-09T02:53:38 IST" name="asConfig" finished-at="2023-08-09T02:53:38 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="asConfig()[pri:0, instance:vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest@36bc55de]" started-at="2023-08-23T23:11:37 IST" name="asConfig" finished-at="2023-08-23T23:11:37 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- asConfig -->
-      </class> <!-- vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest -->
-      <class name="vtigerPractice.AssertionPracticeModified">
-        <test-method signature="sampleTest()[pri:0, instance:vtigerPractice.AssertionPracticeModified@35e2d654]" started-at="2023-08-09T02:52:56 IST" name="sampleTest" finished-at="2023-08-09T02:52:56 IST" duration-ms="3" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [1] but found [2]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [1] but found [2]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:907)
-at org.testng.Assert.assertEquals(Assert.java:917)
-at vtigerPractice.AssertionPracticeModified.sampleTest(AssertionPracticeModified.java:18)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleTest -->
-        <test-method signature="sampleTest1()[pri:0, instance:vtigerPractice.AssertionPracticeModified@35e2d654]" started-at="2023-08-09T02:52:56 IST" name="sampleTest1" finished-at="2023-08-09T02:52:56 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleTest1 -->
-        <test-method signature="sampleTest2()[pri:0, instance:vtigerPractice.AssertionPracticeModified@35e2d654]" started-at="2023-08-09T02:52:56 IST" name="sampleTest2" finished-at="2023-08-09T02:52:56 IST" duration-ms="0" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-expected [1] but found [2],
-expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [1] but found [2],
-expected [true] but found [false]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at vtigerPractice.AssertionPracticeModified.sampleTest2(AssertionPracticeModified.java:66)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:578)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleTest2 -->
-      </class> <!-- vtigerPractice.AssertionPracticeModified -->
-      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry">
-        <test-method signature="createMultipleOrganization(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry@2a798d51]" started-at="2023-08-09T02:49:18 IST" name="createMultipleOrganization" data-provider="getData" finished-at="2023-08-09T02:49:39 IST" duration-ms="20282" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Wipro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Banking]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganization -->
-        <test-method signature="createMultipleOrganization(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry@2a798d51]" started-at="2023-08-09T02:49:39 IST" name="createMultipleOrganization" data-provider="getData" finished-at="2023-08-09T02:49:52 IST" duration-ms="13601" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Lumen]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Biotechnology]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganization -->
-        <test-method signature="createMultipleOrganization(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry@2a798d51]" started-at="2023-08-09T02:49:52 IST" name="createMultipleOrganization" data-provider="getData" finished-at="2023-08-09T02:50:06 IST" duration-ms="13862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[KFC]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Food & Beverage]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganization -->
-        <test-method signature="createMultipleOrganization(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry@2a798d51]" started-at="2023-08-09T02:50:06 IST" name="createMultipleOrganization" data-provider="getData" finished-at="2023-08-09T02:50:20 IST" duration-ms="14002" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Dominos]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Energy]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganization -->
-        <test-method signature="createMultipleOrganization(java.lang.String,java.lang.String)[pri:0, instance:vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry@2a798d51]" started-at="2023-08-09T02:50:20 IST" name="createMultipleOrganization" data-provider="getData" finished-at="2023-08-09T02:50:35 IST" duration-ms="14499" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Infosys]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Media]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createMultipleOrganization -->
-      </class> <!-- vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry -->
-      <class name="vtigerPractice.AssertionsPractice">
-        <test-method signature="sampleTest()[pri:0, instance:vtigerPractice.AssertionsPractice@7b9a4292]" started-at="2023-08-09T02:49:17 IST" name="sampleTest" finished-at="2023-08-09T02:49:18 IST" duration-ms="10" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sampleTest -->
-      </class> <!-- vtigerPractice.AssertionsPractice -->
-      <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest">
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationTest@1bd4fdd]" started-at="2023-08-09T02:52:56 IST" name="bcConfig" finished-at="2023-08-09T02:52:59 IST" duration-ms="3592" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationTest@1bd4fdd]" started-at="2023-08-09T02:52:59 IST" name="bmConfig" finished-at="2023-08-09T02:53:04 IST" duration-ms="4317" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="createContactWithOrganizationTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationTest@1bd4fdd]" started-at="2023-08-09T02:53:04 IST" name="createContactWithOrganizationTest" finished-at="2023-08-09T02:53:34 IST" duration-ms="30532" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createContactWithOrganizationTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationTest@1bd4fdd]" started-at="2023-08-09T02:53:34 IST" name="amConfig" finished-at="2023-08-09T02:53:38 IST" duration-ms="3227" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationTest@1bd4fdd]" started-at="2023-08-09T02:53:38 IST" name="acConfig" finished-at="2023-08-09T02:53:38 IST" duration-ms="327" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-      </class> <!-- vTiger.ContactsTests.CreateContactWithOrganizationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

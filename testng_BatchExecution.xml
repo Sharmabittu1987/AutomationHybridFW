@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite thread-count="5" parallel="classes" name="ParallelClassesExecutionSuite">
-  <test thread-count="5" parallel="classes" name="Test">
-  
+<suite name="BatchExecution">
+
+  <test thread-count="5" name="Test" preserve-order= "false">
     <classes>
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry"/>
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest"/>
       <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest"/>
-      <class name="vtigerPractice.TestNGPractice"/>
       <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest"/>
     </classes>
     
   </test> <!-- Test -->
-</suite> <!-- ParallelClassesExecutionSuite -->
+</suite> <!-- BatchExecution -->

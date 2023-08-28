@@ -7,9 +7,12 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import vTiger.ObjectRepository.HomePage;
@@ -36,19 +39,22 @@ public class BaseClass {
 	
 	public static WebDriver sdriver;
 	
-	@BeforeSuite(groups = {"SmokeSuite","RegressionSuite"})
+	@BeforeSuite(groups = {"SmokeSuite","RegressionSuite"})               // FOR BATCH GROUP EXECUTION USE--> (groups = {"SmokeSuite","RegressionSuite"})in @BeforeSuite 
 	public void bsConfig()
 	{
 		System.out.println("====== DATABASE CONNECTION SUCCESSFUL =====");
 	}
 	
 	
-	@BeforeClass(alwaysRun = true)                         // USE alwaysrun = True ; in EVERY TEST METHOD
-	public void bcConfig()throws Throwable
-	{
+	// @BeforeClass(alwaysRun = true)                                     // FOR BATCH EXECUTION, GROUP EXECUTION USE--> alwaysrun = True ; in EVERY TEST METHOD 
+	@Parameters("browser")                                                // FOR CROSS BROWSER EXECUTION USE--> @Parameters("browser")
+	@BeforeTest()
+	public void bcConfig(String BROWSER)throws Throwable                  // FOR PARALLEL EXECUTION USE--> @BeforeTest IN PLACE OF @BeforeClass(alwaysRun = true)
+	                                                                      // FOR CROSS BROWSER EXECUTION USE-->public void bcConfig(String BROWSER)throws Throwable IN PLACE OF public void bcConfig()throws Throwable 
+	{                                                                        
 		// Read Browser Name & URL from Property File
 		
-		String BROWSER = pUtil.getDataFromPropertyFile("browser");
+	                                                                     // FOR CROSS BROWSER EXECUTION DONT GIVE -->String BROWSER = pUtil.getDataFromPropertyFile("browser") AS IT WILL NOT READ THE BROWSER FROM PROPERTY FILE
 		String URL = pUtil.getDataFromPropertyFile("url");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) 
@@ -115,7 +121,8 @@ public class BaseClass {
 	}
 	
 	
-	@AfterClass(alwaysRun = true)
+	//@AfterClass(alwaysRun = true)                                     // FOR PARALLEL & CCROSS BROWSER EXECUTION USE--> @AfterTest() in place of @BeforeClass(alwaysRun = true)
+	@AfterTest()
 	public void acConfig()
 	{
 		driver.quit();

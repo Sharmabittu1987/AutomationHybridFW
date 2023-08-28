@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="MasterSuite">
+
+  <suite-files>
+  
+    <suite-file path="C:\Bittu Sharma\WECO34\corejavaprograms\AutomationTestingFrameWork\testng_RegressionSuite.xml"/>
+    <suite-file path="C:\Bittu Sharma\WECO34\corejavaprograms\AutomationTestingFrameWork\testng_SmokeSuite.xml"/>
+    
+  </suite-files>
+  
+</suite> <!-- MasterSuite -->

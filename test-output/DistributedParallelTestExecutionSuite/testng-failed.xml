@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [DistributedParallelTestExecutionSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test_Runner_1(failed)">
+    <classes>
+      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest">
+        <methods>
+          <include name="createMultipleOrganizationWithIndustryTest" invocation-numbers="3"/>
+          <include name="asConfig"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="amConfig"/>
+          <include name="bcConfig"/>
+          <include name="acConfig"/>
+        </methods>
+      </class> <!-- vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest -->
+    </classes>
+  </test> <!-- Test_Runner_1(failed) -->
+</suite> <!-- Failed suite [DistributedParallelTestExecutionSuite] -->

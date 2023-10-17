@@ -32,7 +32,8 @@ public class ListenerImplementation implements ITestListener {
 		// TODO Auto-generated method stub
 		
 		String methodName = result.getMethod().getMethodName();
-		System.out.println("---- Execution Started ----"+methodName);
+		System.out.println("----- EXECUTION STARTED ----- "+methodName);
+		System.out.println(" ");
 		
 		test = report.createTest(methodName);
 		
@@ -42,9 +43,11 @@ public class ListenerImplementation implements ITestListener {
 		// TODO Auto-generated method stub
 		
 		String methodName = result.getMethod().getMethodName();
-		//System.out.println("---- PASS ----"+methodName);
 		
-		test.log(Status.PASS, "---- PASS ----"+methodName);
+		System.out.println("----- PASS ----- "+methodName);
+		System.out.println(" ");
+		
+		test.log(Status.PASS, "----- PASS ----- "+methodName);
 	
 	}
 
@@ -53,9 +56,10 @@ public class ListenerImplementation implements ITestListener {
 		
 		String methodName = result.getMethod().getMethodName();
 		
-		//System.out.println("---- FAIL ----"+methodName);
+		System.out.println("----- FAIL ----- "+methodName);
+		System.out.println(" ");
 		
-		test.log(Status.FAIL, "---- FAIL ----"+methodName);
+		test.log(Status.FAIL, "----- FAIL ----- "+methodName);
 		
 		// System.out.println(result.getThrowable());
 		
@@ -85,9 +89,10 @@ public class ListenerImplementation implements ITestListener {
 		
 		String methodName = result.getMethod().getMethodName();
 		
-		//System.out.println("---- SKIP ----"+methodName);
+		System.out.println("----- SKIP ----- "+methodName);
+		System.out.println(" ");
 		
-		test.log(Status.SKIP, "---- SKIP ----"+methodName);
+		test.log(Status.SKIP, "----- SKIP ----- "+methodName);
 		
 		//System.out.println(result.getThrowable());
 		
@@ -108,14 +113,15 @@ public class ListenerImplementation implements ITestListener {
 		
 		// Start of <Suite> - @BeforeSuite
 		
-		System.out.println("---- Suite Execution Started ----");
+		System.out.println("----- SUITE EXECUTION STARTED -----");
+		System.out.println(" ");
 		
 		// Configure the Extent Report.
 		
 		ExtentSparkReporter htmlreport = new ExtentSparkReporter(".\\ExtentReports\\Report-"+new JavaUtility().getSystemDateInFormat()+".html");
 		
-		htmlreport.config().setDocumentTitle("Vtiger Execution Report");
-		htmlreport.config().setReportName("Build 3 Vtiger Execution Report");
+		htmlreport.config().setDocumentTitle("Vtiger EXECUTION REPORT");
+		htmlreport.config().setReportName("Build 3 Vtiger EXECUTION REPORT");
 		htmlreport.config().setTheme(Theme.DARK);
 		
 		
@@ -123,18 +129,19 @@ public class ListenerImplementation implements ITestListener {
 		
 		report = new ExtentReports();
 		report.attachReporter(htmlreport);
-		report.setSystemInfo("Base Browser", "Chrome");
-		report.setSystemInfo("Base Platform", "Testing Environment");
-		report.setSystemInfo("Base URL", "http://localhost:8888");
-		report.setSystemInfo("Base OS", "Windows");
-		report.setSystemInfo("Base Reporter", "Bittu Kumar Sharma");
+		report.setSystemInfo("BASE BROWSER", "Mozilla");
+		report.setSystemInfo("BASE PLATFORM", "TESTING ENVIRONMENT");
+		report.setSystemInfo("BASE URL", "http://localhost:8888");
+		report.setSystemInfo("BASE OS", "WINDOWS");
+		report.setSystemInfo("BASE REPORTER", "BITTU KUMAR SHARMA");
 		
 	}
 
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
 		
-		System.out.println("---- Suite Execution Ended ----");
+		System.out.println("----- SUITE EXECUTION ENDED -----");
+		System.out.println("******************************************************* ");
 		
 		
 		// Report Generation.

@@ -3,6 +3,11 @@
 
 <suite name="MasterSuite">
 
+  <listeners>
+    <listener class-name="vTiger.GenericUtilities.ListenerImplementation">
+    </listener>
+  </listeners>
+
   <suite-files>
   
     <suite-file path="C:\Bittu Sharma\WECO34\corejavaprograms\AutomationTestingFrameWork\testng_RegressionSuite.xml"/>

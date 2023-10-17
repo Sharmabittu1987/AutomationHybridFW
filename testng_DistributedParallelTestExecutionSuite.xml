@@ -3,6 +3,11 @@
 
 <suite thread-count="3" parallel="tests" name="DistributedParallelTestExecutionSuite">
 
+  <listeners>
+    <listener class-name="vTiger.GenericUtilities.ListenerImplementation">
+    </listener>
+  </listeners>
+
   <test thread-count="3" parallel="tests" name="Test_Runner_1">
     <classes>
     

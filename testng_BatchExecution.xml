@@ -3,6 +3,12 @@
 
 <suite name="BatchExecution">
 
+  <listeners>
+    <listener class-name="vTiger.GenericUtilities.ListenerImplementation">
+    </listener>
+  </listeners>
+    
+
   <test thread-count="5" name="Test" preserve-order= "false">
     <classes>
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry"/>

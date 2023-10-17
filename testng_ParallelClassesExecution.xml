@@ -3,16 +3,13 @@
 
 <suite thread-count="5" parallel="classes" name="ParallelClassesExecutionSuite">
 
-  <test thread-count="5" parallel="classes" name="Test_Runner_1">
-    <classes>
-    
-      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustry"/>
-      
-    </classes>
-  </test> <!-- Test -->
+  <listeners>
+    <listener class-name="vTiger.GenericUtilities.ListenerImplementation">
+    </listener>
+  </listeners>
   
   
-  <test thread-count="5" parallel="classes" name="Test_Runner_2">
+  <test thread-count="3" parallel="classes" name="Test_Runner_1">
     <classes>
       
       <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest"/>
@@ -21,7 +18,7 @@
   </test> <!-- Test -->
   
   
-  <test thread-count="5" parallel="classes" name="Test_Runner_3">
+  <test thread-count="3" parallel="classes" name="Test_Runner_2">
     <classes>
     
       <class name="vTiger.OrganizationsTests.CreateOrganizationWithIndustryTest"/>
@@ -30,16 +27,7 @@
   </test> <!-- Test -->
 
 
-  <test thread-count="5" parallel="classes" name="Test_Runner_4">
-    <classes>
-    
-      <class name="vtigerPractice.TestNGPractice"/>
-      
-    </classes>
-  </test> <!-- Test -->
-
-
-  <test thread-count="5" parallel="classes" name="Test_Runner_5">
+  <test thread-count="3" parallel="classes" name="Test_Runner_3">
     <classes>
     
       <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest"/>

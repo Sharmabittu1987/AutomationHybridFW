@@ -39,54 +39,70 @@ public class BaseClass {
 	
 	public static WebDriver sdriver;
 	
-	@BeforeSuite(groups = {"SmokeSuite","RegressionSuite"})               // FOR BATCH GROUP EXECUTION USE--> (groups = {"SmokeSuite","RegressionSuite"})in @BeforeSuite 
+	// FOR BATCH GROUP EXECUTION USE--> (groups = {"SmokeSuite","RegressionSuite"})in @BeforeSuite
+	
+	@BeforeSuite(groups = {"SmokeSuite","RegressionSuite"})                
 	public void bsConfig()
 	{
-		System.out.println("====== DATABASE CONNECTION SUCCESSFUL =====");
+		System.out.println("===== DATABASE CONNECTION IS SUCCESSFUL =====");
 	}
 	
 	
-	// @BeforeClass(alwaysRun = true)                                     // FOR BATCH EXECUTION, GROUP EXECUTION USE--> alwaysrun = True ; in EVERY TEST METHOD 
-	@Parameters("browser")                                                // FOR CROSS BROWSER EXECUTION USE--> @Parameters("browser")
+	// FOR BATCH EXECUTION, GROUP EXECUTION USE--> alwaysrun = True ; in EVERY TEST METHOD 
+	
+	// FOR CROSS BROWSER EXECUTION USE--> @Parameters("browser")
+	//@Parameters("browser")                                                
+	
+	// FOR PARALLEL EXECUTION USE--> @BeforeTest IN PLACE OF @BeforeClass(alwaysRun = true)
 	@BeforeTest()
-	public void bcConfig(String BROWSER)throws Throwable                  // FOR PARALLEL EXECUTION USE--> @BeforeTest IN PLACE OF @BeforeClass(alwaysRun = true)
-	                                                                      // FOR CROSS BROWSER EXECUTION USE-->public void bcConfig(String BROWSER)throws Throwable IN PLACE OF public void bcConfig()throws Throwable 
+	
+	//@BeforeClass(alwaysRun = true)
+	public void bcConfig(/*String BROWSER*/)throws Throwable              
+	          
+	// FOR CROSS BROWSER EXECUTION USE-->public void bcConfig(String BROWSER)throws Throwable 
+	// IN PLACE OF public void bcConfig()throws Throwable
+	
 	{                                                                        
 		// Read Browser Name & URL from Property File
 		
-	                                                                     // FOR CROSS BROWSER EXECUTION DONT GIVE -->String BROWSER = pUtil.getDataFromPropertyFile("browser") AS IT WILL NOT READ THE BROWSER FROM PROPERTY FILE
-		String URL = pUtil.getDataFromPropertyFile("url");
+	    String BROWSER = pUtil.getDataFromPropertyFile("browser");                                                                 
+		
+    	// FOR CROSS BROWSER EXECUTION DONT GIVE -->String BROWSER = pUtil.getDataFromPropertyFile("browser") 
+	    // AS IT WILL NOT READ THE BROWSER FROM PROPERTY FILE.
+	    
+	    String URL = pUtil.getDataFromPropertyFile("url");
 		
 		if (BROWSER.equalsIgnoreCase("chrome")) 
 		{
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			System.out.println("======= "+BROWSER+" Browser Launched ========");
+			System.out.println("===== "+BROWSER+" Browser Launched Successfullly =====");
 		}
 		else if (BROWSER.equalsIgnoreCase("firefox")) 
 		{
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			System.out.println("======== "+BROWSER+" Browser Launched ========");
+			System.out.println("===== "+BROWSER+" Browser Launched Successfully =====");
 		}
 		else if (BROWSER.equalsIgnoreCase("edge"))
 		{
-			WebDriverManager.edgedriver();
+			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			System.out.println("======== "+BROWSER+" Browser Launched");
+			System.out.println("===== "+BROWSER+" Browser Launched Successfully =====");
 		}
 		else
 		{
-			System.out.println(" ======== INVALID BROWSER NAME =========");
+			System.out.println("===== INVALID BROWSER NAME IN PROPERTY FILE =====");
 		}
+		
+		// Only Used for Listener to Take Screen Shots.
+		
+		sdriver = driver;
+		
 		
 		wUtil.maximizeWindow(driver);
 		wUtil.waitforElementsToLoad(driver);
 		
-		
-		// Only Used for Listener to take Screen Shots.
-		
-		sdriver = driver;
 		
 		// Load The URL
 		
@@ -105,7 +121,8 @@ public class BaseClass {
 		LoginPage lp = new LoginPage(driver);
 		lp.loginToApp(USERNAME, PASSWORD);
 		
-		System.out.println(" ===== LOGIN SUCCESSFUL =====");
+		System.out.println("===== LOGIN IS SUCCESSFUL =====");
+		System.out.println(" ");
 		
 	}
 	
@@ -116,17 +133,22 @@ public class BaseClass {
 		HomePage hp = new HomePage(driver);
 		hp.logoutOfApp(driver);
 		
-		System.out.println(" ===== LOGOUT SUCCESSFUL =====");
+		System.out.println("===== LOGOUT IS SUCCESSFUL =====");
+		System.out.println("**********************************************************************");
 		
 	}
 	
 	
-	//@AfterClass(alwaysRun = true)                                     // FOR PARALLEL & CCROSS BROWSER EXECUTION USE--> @AfterTest() in place of @BeforeClass(alwaysRun = true)
+	// FOR PARALLEL & CROSS BROWSER EXECUTION USE--> @AfterTest() in place of @BeforeClass(alwaysRun = true)
+	
 	@AfterTest()
+	
+	//@AfterClass(alwaysRun = true)
 	public void acConfig()
 	{
 		driver.quit();
-		System.out.println(" ===== BROWSER CLOSED =====");
+		System.out.println("===== BROWSER CLOSED SUCCESSFULLY =====");
+		System.out.println(" ");
 		
 	}
 	
@@ -134,7 +156,8 @@ public class BaseClass {
 	@AfterSuite(alwaysRun = true)
 	public void asConfig()
 	{
-		System.out.println(" ===== DATABASE CONNECTION CLOSED =====");
+		System.out.println("===== DATABASE CONNECTION IS CLOSED SUCCESSFULLY =====");
+		System.out.println("##########################################################################");
 		
 	}
 	

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [DistributedParallelTestExecutionSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="Test_Runner_1(failed)">
+  <listeners>
+    <listener class-name="vTiger.GenericUtilities.ListenerImplementation"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Test_Runner_3(failed)">
     <classes>
-      <class name="vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest">
+      <class name="vTiger.ContactsTests.CreateContactWithOrganizationTest">
         <methods>
-          <include name="createMultipleOrganizationWithIndustryTest" invocation-numbers="3"/>
           <include name="asConfig"/>
+          <include name="createContactWithOrganizationTest"/>
           <include name="bsConfig"/>
           <include name="bmConfig"/>
           <include name="amConfig"/>
           <include name="bcConfig"/>
           <include name="acConfig"/>
         </methods>
-      </class> <!-- vTiger.OrganizationsTests.CreateMultipleOrganizationWithIndustryTest -->
+      </class> <!-- vTiger.ContactsTests.CreateContactWithOrganizationTest -->
     </classes>
-  </test> <!-- Test_Runner_1(failed) -->
+  </test> <!-- Test_Runner_3(failed) -->
 </suite> <!-- Failed suite [DistributedParallelTestExecutionSuite] -->
